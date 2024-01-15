@@ -1,0 +1,170 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #f1390a;
+  --primary-light: rgb(224, 176, 180);
+  --secondary: #cc5d82;
+  --green: #3deb08;
+  --secondary-light: rgba(199, 31, 185, 0.2);
+  --secondary-light-2: rgba(165, 159, 190, 0.1);
+  --white: #c5c6cf;
+  --black: #0c0e74;
+
+  /* hover dropdown list */
+  --shadow: 0px 2px 8px 0px var(--secondary-light);
+}
+
+.donations--content {
+    background:#ebe9e9;
+}
+
+.container-fluid {
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.main--recordstitle {
+    color: rgba(113, 99, 186, 255);
+    padding: 1rem;
+    font-size: 16px;
+}
+
+.main--title {
+    color: rgba(113, 99, 186, 255);
+    padding-bottom: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.tabular--wrapper {
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+}
+
+.table--container {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead {
+    background: rgba(113, 99, 186, 255);
+    color: #fff;
+}
+th {
+    padding: 15px;
+    text-align: left;
+}
+tbody {
+    background: #f2f2f2;
+}
+td {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+tr:nth-child(even) {
+    background: #fff;
+}
+tfoot {
+    background: rgba(113, 99, 186, 255);
+    font-weight: bold;
+    color: #fff;
+}
+tfoot td {
+    padding: 15px;
+    color: #fff;
+}
+
+.actionBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-top: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+.btn1 {
+    background-color: rgba(113, 99, 186, 255);
+    color: #fff;
+    padding: 6px 8px;
+    border-color: #fff;
+    border-radius: 5px;
+}
+.btn1:hover {
+    color: rgba(113, 99, 186, 255);
+    background-color: #fff;
+    border-color: rgba(113, 99, 186, 255);
+}
+
+.donationTable thead tr th {
+    background-color: rgba(113, 99, 186, 255);
+    color: #fff;
+}
+  
+.donationTable thead tr th:hover {
+    color:  #fff;
+    background-color: rgb(153,157,247,250);
+    border-color: rgb(153,157,247,250);
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.form-group {
+    padding: 12px;
+}
+
+.form-group label {
+    font-weight: 500;
+}
+
+.modal-header {
+    background: #00cfc5;
+    color: #fff
+}
+
+input#donationAmount {
+    width: 50vw;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: darkblue;
+}
+label{
+    width: 50vw;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: darkblue;
+}
+select#donationType {
+    width: 25vw;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: darkblue;
+    margin-left: 30px;
+}
+/* #donationFrame {
+    height: 40vh;
+    width: 50vw;
+    border: 4px solid;
+    border-image: linear-gradient(0.25turn, rgb(183, 38, 202), rgb(230, 49, 94), rgba(55, 168, 20, 0.603));
+    border-image-slice: 1;
+    color: rgb(240, 162, 240) ;
+} */
+section {  
+    margin-left: 10px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: rgb(12, 24, 133);
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 20px;
+    position: absolute;
+}

@@ -1,0 +1,82 @@
+input#communityName{
+    width: 30vw;
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: darkblue;
+}
+input#communityDetails{
+    width: 30vw;
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: darkblue;
+}
+input#communityDate{
+    width: 30vw;
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: darkblue;
+}
+input#communityPhoto{
+    width: 30vw;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: darkblue;
+}
+input#communityPlace{
+    width: 30vw;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: darkblue;
+}
+.form-group {
+    padding: 10px;
+}
+.form-group label{
+        font-size: 20px;
+}
+button.btn.btn-danger.mt-2 {
+    margin-top: -3px;
+    display: block;
+    width: 10%;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #f660c9, #241935, #3ac6e1 );
+    /* background-size: 200%; */
+    font-size: 16px;
+    color: #fff;
+    font-family: 'poppins',sans-serif;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+    /* margin-left: 20vw; */
+}
+button.btn.btn-primary {
+    display: block;
+    width: 20%;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #f660c9, #241935, #3ac6e1 );
+    background-size: 200%;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'poppins',sans-serif;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+    margin-left: 20vw;
+}
+#formItem label {
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: .85em;
+}

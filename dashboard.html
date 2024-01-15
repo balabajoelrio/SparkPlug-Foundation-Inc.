@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboardstyle.css">
+    <script src="scripts/dashboardscript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="dashboard--content">
+        <div class="card--container">
+            <h1 class="main--title">Dashboard</h1>
+            <div class="card--wrapper">
+                <div class="payment--card light-red">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Adopted Children
+                            </span>
+                            <span class="amount--value">
+                                5
+                            </span>
+                        </div>
+                        <i class="fa-solid fa-children icon"></i>
+                    </div>
+                    <span class="card-detail">
+                        Lovely children
+                    </span>
+                </div>
+
+                <div class="payment--card light-purple">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Donations
+                            </span>
+                            <span class="amount--value">
+                                $1,000.00
+                            </span>
+                        </div>
+                        <i class="fa-solid fa-hand-holding-dollar icon dark-purple"></i>
+                    </div>
+                    <span class="card-detail">
+                        Donate for a cause.
+                    </span>
+                </div>
+
+                <div class="payment--card light-green">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Volunteers
+                            </span>
+                            <span class="amount--value">
+                                5
+                            </span>
+                        </div>
+                        <i class="fa-solid fa-people-group icon dark-green"></i>
+                    </div>
+                    <span class="card-detail">
+                        Amazing people!
+                    </span>
+                </div>
+
+                <div class="payment--card light-blue">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Events
+                            </span>
+                            <span class="amount--value">
+                                2
+                            </span>
+                        </div>
+                        <i class="fa-solid fa-calendar-days icon dark-blue"></i>
+                    </div>
+                    <span class="card-detail">
+                        Always looking forward!
+                    </span>
+                </div>
+
+                <div class="payment--card light-yellow">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Community
+                            </span>
+                            <span class="amount--value">
+                                5
+                            </span>
+                        </div>
+                        <i class="fa-solid fa-group-arrows-rotate icon dark-yellow"></i>
+                    </div>
+                    <span class="card-detail">
+                        Every visit counts.
+                    </span>
+                </div>
+
+                <div class="payment--card light-orange">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Partners
+                            </span>
+                            <span class="amount--value">
+                                10
+                            </span>
+                        </div>
+                        <i class="fa-solid fa-handshake icon dark-orange"></i>
+                    </div>
+                    <span class="card-detail">
+                        Our most trusted!
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabular--wrapper">
+            <h3 class="main--title">Donation Data </h3>
+            
+            <div class="table--container">
+                <table class="donationTable" id="donationTable">
+                    <thead>
+                        <tr>
+                            <th scope="col" onclick="sortTable(0)">Date</th>
+                            <th scope="col" onclick="sortTable(1)">Donor</th>
+                            <th scope="col" onclick="sortTable(2)">Description</th>
+                            <th scope="col" onclick="sortTable(3)">Amount</th>
+                            <th scope="col" onclick="sortTable(4)">Category</th>
+                            <th scope="col" onclick="sortTable(5)">Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-01-01</td>
+                            <td>Mr. Kenon</td>
+                            <td>School Supplies</td>
+                            <td>$500</td>
+                            <td>School Materials</td>
+                            <td>Received</td>
+                            <td class="actionBtn">
+                                <i class="fa-solid fa-pen-to-square text-success"></i>
+                                <i class="fa-solid fa-trash text-danger"></i> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-01-05</td>
+                            <td>Mr. Chris</td>
+                            <td>Food Supplies</td>
+                            <td>$300</td>
+                            <td>Food</td>
+                            <td>Received</td>
+                            <td class="actionBtn">
+                                <i class="fa-solid fa-pen-to-square text-success"></i>
+                                <i class="fa-solid fa-trash text-danger"></i> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-01-02</td>
+                            <td>Mr. Joel</td>
+                            <td>Clothes Supplies</td>
+                            <td>$200</td>
+                            <td>Clothing</td>
+                            <td>Pending</td>
+                            <td class="actionBtn">
+                                <i class="fa-solid fa-pen-to-square text-success"></i>
+                                <i class="fa-solid fa-trash text-danger"></i> 
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                        <td colspan="7">Total: $1,000</td>
+                        </tr>
+                    </tfoot> 
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

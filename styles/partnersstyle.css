@@ -1,0 +1,74 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #f1390a;
+  --primary-light: rgb(224, 176, 180);
+  --secondary: #cc5d82;
+  --green: #3deb08;
+  --secondary-light: rgba(199, 31, 185, 0.2);
+  --secondary-light-2: rgba(165, 159, 190, 0.1);
+  --white: #c5c6cf;
+  --black: #0c0e74;
+
+  /* hover dropdown list */
+  --shadow: 0px 2px 8px 0px var(--secondary-light);
+}
+
+.partners--content {
+    background:#ebe9e9;
+}
+
+.tabular--wrapper {
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 2rem;
+}
+
+.main--title {
+    color: rgba(113, 99, 186, 255);
+    padding-bottom: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.btn1 {
+    background-color: rgba(113, 99, 186, 255);
+    color: #fff;
+    padding: 6px 8px;
+    border-color: #fff;
+    border-radius: 5px;
+}
+.btn1:hover {
+    color: rgba(113, 99, 186, 255);
+    background-color: #fff;
+    border-color: rgba(113, 99, 186, 255);
+}
+
+.form-group {
+    padding: 12px;
+}
+
+.form-group label {
+    font-weight: 500;
+}
+
+.modal-header {
+    background: #00cfc5;
+    color: #fff
+}
+
+.card {
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    display: flex;
+}
+
+.card img {
+    padding: 2rem;
+}
+
+.card img:hover {
+    transform: scaleZ(10);
+}

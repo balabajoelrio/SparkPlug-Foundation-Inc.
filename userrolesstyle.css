@@ -1,0 +1,104 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+      display: flex;
+      overflow: hidden;
+  }
+
+  /* ------------Sidebar (start)--------------*/
+  .sidebar {
+      position: sticky;
+      top: 10;
+      left: 0;
+      bottom: 0;
+      width: 200px;
+      height: 100vh;
+      padding: 10px;
+      overflow: hidden;
+      transition: all 0.5s linear;
+
+  }
+  .items {
+    padding: 10px 30px;
+    font-size: 18px;
+    list-style: none;
+  }
+
+  .items li {
+    padding: 1rem;
+    margin: 4px 0;
+    border-radius: 8px;
+    background-color: #0e8eef;
+    transition: all 0.5s ease-in-out;
+    list-style: none;
+    font-weight: bold;
+    gap: 2rem;
+    color: #fff;
+  }
+
+  .items li:hover {
+    cursor: pointer;
+    background: #e0e0e058;
+    transform: scaleX(1.1);
+    color: black;
+  }
+
+  .items a {
+    color: #141414;
+    margin-left: 8px;
+    list-style: none;
+    text-decoration: none;
+  }
+  /* ------------Sidebar (End)--------------*/
+
+  /* -------User Role Interface (start)-----------*/
+  .user-role-interfacee {
+    padding-top: 20px;
+  }
+
+  /*------------user interface (Start)-------------*/
+  .user-int {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .user-int i {
+    color: #0e8eef;
+    font-size: 40px;
+  }
+  .user-int i:hover {
+    cursor: pointer;
+    color: #0060fb58;
+  }
+  /*-------------user interface (End)-------------*/
+
+  /*-------------Role interface (Start)-----------*/
+  .role-int {
+    margin-top: 10px;
+    display: flex;
+  }
+
+  .role-int i {
+    color: #0e8eef;
+    font-size: 40px;
+  }
+  .role-int i:hover {
+    cursor: pointer;
+    color: #0060fb58;
+  }
+  /*-------------Role interface (End)-------------*/
+
+  /* ------------User Role Interface (End)--------------*/
+
+  
+  

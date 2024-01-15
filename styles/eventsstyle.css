@@ -1,0 +1,110 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.events--content {
+    background:#ebe9e9;
+}
+
+.main--title {
+    color: rgba(113, 99, 186, 255);
+    padding-bottom: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.tabular--wrapper {
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 2rem;
+}
+
+.btn1 {
+    /* background-color: rgba(113, 99, 186, 255);
+    color: #fff;
+    padding: 6px 8px;
+    border-color: #fff;
+    border-radius: 5px; */
+
+    background-color: rgba(113, 99, 186, 255);
+    color: #fff;
+    padding: 6px 8px;
+    border-color: #fff;
+    border-radius: 5px;
+}
+.btn1:hover {
+    /* color: rgba(113, 99, 186, 255);
+    background-color: #fff;
+    border-color: rgba(113, 99, 186, 255); */
+
+    color: rgba(113, 99, 186, 255);
+    background-color: #fff;
+    border-color: rgba(113, 99, 186, 255);
+}
+
+
+.form-group {
+    padding: 12px;
+}
+
+.form-group label {
+    font-weight: 500;
+}
+
+.modal-header {
+    background: #00cfc5;
+    color: #fff
+}
+
+.geo-map {
+    margin-left: 50vw;
+}
+
+/* new added styles */
+
+iframe#eventDisplay {
+    border: solid;
+    color: darkblue;
+    height: 40vh;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: #e0e0e058;
+}
+iframe#eventIframe {
+    border: solid;
+    color: darkblue;
+    height: 40vh;
+    width: 40vw;
+    border-radius: 20px;
+    background-color: #e0e0e058;
+}
+#map{
+    height: 30vh;
+    width: 40vw;
+    margin: 0px 0px 30px 0;
+}
+.event-entry {
+    color: darkblue;
+    font-size: 18px;
+}
+img{
+    width: 4.2rem;
+    
+}
+
+
+/* new added style */
+
+.row {
+    margin-bottom: 20px;
+}
+.event-card {
+    margin-bottom: 20px;
+}
+/* #map {
+    height: 300px;
+} */
+#eventHistory {
+    height: 400px;
+    width: 100%;
+    border: 1px solid #ddd;
+}

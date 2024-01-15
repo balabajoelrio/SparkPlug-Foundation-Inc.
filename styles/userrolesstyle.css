@@ -1,0 +1,100 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.users-roles--content {
+  background:#ebe9e9;
+}
+
+.main--title {
+  color: rgba(113, 99, 186, 255);
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.tabular--wrapper {
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 2rem;
+}
+
+.container-fluid {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Titles (start) */
+.topHead {
+  color: rgba(113, 99, 186, 255);
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.usersTitle h2 {
+  color: rgba(113, 99, 186, 255);
+  font-size: 18px;
+}
+
+.rolesTitle h2 {
+  color: rgba(113, 99, 186, 255);
+  font-size: 18px;
+}
+
+/* Title (end) */
+
+/* All buttons (start)*/
+.btn1 {
+  background-color: rgba(113, 99, 186, 255);
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 5px;
+  border-color: #fff;
+}
+
+.btn1:hover {
+  color: rgba(113, 99, 186, 255);
+  background-color: #fff;
+  border-color: rgba(113, 99, 186, 255);
+}
+/* All buttons (end) */
+
+/* All table Header (start) */
+#myUserTable thead tr th {
+  background-color: rgba(113, 99, 186, 255);
+  color: #fff;
+}
+
+#myUserTable thead tr th:hover {
+  color:  #fff;
+  background-color: rgb(153,157,247,250);
+  border-color: rgb(153,157,247,250);
+  border-width: 1px;
+  cursor: pointer;
+}
+
+#myRoleTable thead tr th {
+  background-color: rgba(113, 99, 186, 255);
+  color: #fff;
+}
+
+#myRoleTable thead tr th:hover {
+  color:  #fff;
+  background-color: rgb(153,157,247,250);
+  border-color: rgb(153,157,247,250);    
+  border-width: 1px;
+  cursor: pointer;
+}
+/* All table Header (end) */ 
+
+.form-group {
+  padding: 12px;
+}
+
+.form-group label {
+  font-weight: 500;
+}
+
+.modal-header {
+  background: #00cfc5;
+  color: #fff
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="icon" href="Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/adminlandingstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
+</head>
+
+<body> 
+    <div class="sidebar">
+        
+        <ul class="menu">    
+            <li class="active">
+                <a href="dashboard.html" target="myIframe">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>DashBoard</span>
+                </a>
+            </li>
+            <li>
+                <a href="user-roles.html" target="myIframe">
+                <i class="fas fa-user"></i>
+                <span>Users & Roles</span>
+                </a>
+            </li>
+            <li>
+                <a href="children.html" target="myIframe">
+                <i class="fa-solid fa-children"></i>
+                <span>Children</span>
+                </a>
+            </li>
+            <li>
+                <a href="volunteers.html" target="myIframe">
+                <i class="fa-solid fa-people-group"></i>
+                <span>Volunteers</span>
+                </a>
+            </li>
+            <li>
+                <a href="donations.html" target="myIframe">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <span>Donations</span>
+                </a>
+            </li>
+            <li>
+                <a href="events.html" target="myIframe">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Events</span>
+                </a>
+            </li>
+            <li>
+                <a href="community.html" target="myIframe">
+                <i class="fa-solid fa-group-arrows-rotate"></i>
+                <span>Community</span>
+                </a>
+            </li>
+            <li>
+                <a href="partners.html" target="myIframe">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Partners</span>
+                </a>
+            </li>
+            <li>
+                <a href="settings.html" target="myIframe">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="main--content">
+        <div class="header--wrapper">
+            <!--header and logo-->
+            <div class="header--title">
+                <a href="admin.html">
+                    <img src="Logo.png" alt="logo">
+                </a>
+                <h2>SparkPlug Foundation</h2>
+            </div>
+            <!--search & profile icon-->
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <!-- <button class="btn btn-flat text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false"><i class="fa-solid fa-user user-pic" onclick="toggleMenu()"></i></button> -->
+                
+                <i class="fa-solid fa-user user-pic" onclick="toggleMenu()"></i>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="profile-user.png" alt="profile">
+                            <h3>Admin</h3>
+                        </div>
+                        <hr>
+                        <a href="editprofile.html" class="sub-menu-link" target="myIframe">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <p>Edit Profile</p>
+                        </a>
+                        <a href="index.html" class="sub-menu-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--iframe to display the rest of the tabs-->
+        <div class="iframe">
+            <iframe src="dashboard.html" width="100%" height="900" name="myIframe" id="myIframe"></iframe>
+        </div>
+    </div>
+
+    <script src="scripts/adminlandingscript.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsza5MuJxUvgRNiTfmorQJC-hQSblGr6g&callback=initMap"></script>
+</body>
+</html>

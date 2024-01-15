@@ -1,0 +1,123 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #f1390a;
+  --primary-light: rgb(224, 176, 180);
+  --secondary: #cc5d82;
+  --green: #3deb08;
+  --secondary-light: rgba(199, 31, 185, 0.2);
+  --secondary-light-2: rgba(165, 159, 190, 0.1);
+  --white: #c5c6cf;
+  --black: #0c0e74;
+
+  /* hover dropdown list */
+  --shadow: 0px 2px 8px 0px var(--secondary-light);
+}
+
+.settings--content {
+    background:#ebe9e9;
+}
+
+.tabular--wrapper {
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 2rem;
+}
+
+.main--title {
+    color: rgba(113, 99, 186, 255);
+    padding-bottom: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.btn1 {
+    background-color: rgba(113, 99, 186, 255);
+    color: #fff;
+    padding: 6px 8px;
+    border-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btn1:hover {
+    color: rgba(113, 99, 186, 255);
+    background-color: #fff;
+    border-color: rgba(113, 99, 186, 255);
+}
+
+.form-group {
+    padding: 12px;
+}
+
+.form-group label {
+    font-weight: 500;
+    align-items: baseline;
+}
+
+.modal-header {
+    background: #00cfc5;
+    color: #fff
+}
+
+/*------- Switch style (start)------*/
+.switch {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 34px;
+    }
+
+    .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+
+    .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    }
+
+    .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    }
+
+    input:checked + .slider {
+    background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+    border-radius: 34px;
+    }
+
+    .slider.round:before {
+    border-radius: 50%;
+    }
+    /*------- Switch style (end)------*/

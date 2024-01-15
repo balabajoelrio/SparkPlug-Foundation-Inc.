@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations</title>
+    <link rel="stylesheet" href="styles/donationsstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="scripts/donationscript.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</head>
+<body>
+    <div class="donations--content">
+
+        <div class="container-fluid">
+        
+            <div class="tabular--wrapper"> 
+
+                <!-- donations trigger modal -->
+                <div class="d-flex">
+                    <h3 class="main--title">Donation Data </h3> 
+                    <div class="ms-auto">
+                        <button type="button" class="btn1" data-bs-toggle="modal" data-bs-target="#modalDonation">
+                            <i class="fa-solid fa-plus "></i> Donation
+                        </button> 
+                    </div>
+                </div>
+
+                <!--Donations Modal-->
+                <div class="modal fade" id="modalDonation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Record Donation</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <div class="form-group">
+
+                                    <label class="form-label">Date:</label>
+                                    <input type="date" class="form-control" id="donDate" required>
+                                    <label class="form-label mt-3">Name: </label>
+                                    <input type="name" class="form-control" id="donName" required>
+                                    <label class="form-label mt-3">Description:</label>
+                                    <input type="text" class="form-control" required>
+                                    <label class="form-label mt-3">Amount:</label>
+                                    <input type="text" class="form-control" id="donAmount" required>
+                                    <label class="form-label mt-3">Category:</label>
+                                    <select class="form-control" id="donCategory" required>
+                                        <option>School Materials</option>
+                                        <option>Clothing</option>
+                                        <option>Food</option>
+                                        <option>Health Kit</option>
+                                        <option>Miscellaneous</option>
+                                    </select>
+                                    <label class="form-label mt-3">Status:</label>
+                                    <select class="form-control" id="donStatus" required>
+                                        <option>Received</option>
+                                        <option>Pending</option>
+                                        <option>Declined</option>
+                                    </select>
+                                    <label class="form-label mt-3">Mode:</label>
+                                    <select class="form-control" id="donationType">
+                                        <optgroup label="E-wallet">
+                                            <option value="PayPal">PayPal</option>
+                                            <option value="GCash">GCash</option>
+                                        </optgroup>
+                                        <optgroup label="Banks">
+                                            <option value="BPI">BPI</option>
+                                            <option value="Metrobank">Metrobank</option>
+                                            <option value="PNB">PNB</option>
+                                            <option value="UBP">UBP</option>
+                                            <option value="BDO">BDO</option>
+                                        </optgroup>
+                                    </select>    
+                                    
+                                    <div class="donation--summary mt-4" id="report">
+                                        <h4>Donation Sumary</h4>
+                                        <p>Name:</p>
+                                        <p>Amount: $<span id="totalAmount">0.00</span></p>
+                                        <p>Mode:</p>
+                                        <ul id="donationTypes">
+                                        <!-- Donation types will be dynamically added here -->
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn1" onclick="recordDonation()">Record Donation</button>
+                                <div class="ms-auto p-1">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Donation table-->
+                <div class="table--container">
+                    <table class="donationTable" id="donationTable">
+                        <thead>
+                            <tr>
+                                <th scope="col" onclick="sortTable(0)">Date</th>
+                                <th scope="col" onclick="sortTable(1)">Donor</th>
+                                <th scope="col" onclick="sortTable(2)">Description</th>
+                                <th scope="col" onclick="sortTable(3)">Amount</th>
+                                <th scope="col" onclick="sortTable(4)">Category</th>
+                                <th scope="col" onclick="sortTable(5)">Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-01-01</td>
+                                <td>Mr. Kenon</td>
+                                <td>School Supplies</td>
+                                <td>$500</td>
+                                <td>School Materials</td>
+                                <td>Received</td>
+                                <td class="actionBtn">
+                                    <i class="fa-solid fa-pen-to-square text-success"></i>
+                                    <i class="fa-solid fa-trash text-danger"></i> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2024-01-05</td>
+                                <td>Mr. Chris</td>
+                                <td>Food Supplies</td>
+                                <td>$300</td>
+                                <td>Food</td>
+                                <td>Received</td>
+                                <td class="actionBtn">
+                                    <i class="fa-solid fa-pen-to-square text-success"></i>
+                                    <i class="fa-solid fa-trash text-danger"></i> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2024-01-02</td>
+                                <td>Mr. Joel</td>
+                                <td>Clothes Supplies</td>
+                                <td>$200</td>
+                                <td>Clothing</td>
+                                <td>Pending</td>
+                                <td class="actionBtn">
+                                    <i class="fa-solid fa-pen-to-square text-success"></i>
+                                    <i class="fa-solid fa-trash text-danger"></i> 
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                            <td colspan="7">Total: $1,000</td>
+                            </tr>
+                        </tfoot> 
+                    </table>
+                </div>
+
+                <div class="col-md-3 form-control" id="sidebarDonation">
+                    <h3 class="main--recordstitle">Donations Record</h3>
+                    <iframe id="donationFrame" title="donation"></iframe>
+                </div>  
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    
+</body>
+</html>
